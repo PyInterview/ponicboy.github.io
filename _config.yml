@@ -21,7 +21,7 @@ credits: '<p>Created with &hearts; by <a href="http://phlow.de/">Phlow</a> with 
 
 # Main author of the website
 # See > authors.yml
-author: phlow
+author: ponicboy
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
@@ -39,7 +39,6 @@ improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
 urlimg: 'https://ponicboy.github.io/images/'
-
 
 # Logo size is 600x80 pixels
 logo: "logo.png"
