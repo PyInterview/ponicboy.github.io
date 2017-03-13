@@ -36,28 +36,18 @@ format: frontpage
 {% include alert warning='Hey! Can you solve this coding question?' %}
 
 {% include trinket-open type='python' %}
-# Problem:
-# Given a string of opening and closing parentheses, check whether it’s balanced.
+import turtle
 
-def isBalanced(expr):
-    if len(expr)%2!=0:
-        return False
-    opening=set('([{')
-    match=set([ ('(',')'), ('[',']'), ('{','}') ])
-    stack=[]
-    for char in expr:
-        if char in opening:
-            stack.append(char)
-        else:
-            if len(stack)==0:
-                return False
-            lastOpen=stack.pop()
-            if (lastOpen, char) not in match:
-                return False
-    return len(stack)==0
+tina = turtle.Turtle()
 
-# Test Cases:
-print isBalanced('()()(()))')
+for c in ['red', 'green', 'yellow', 'blue']:
+    tina.color(c)
+    tina.forward(75)
+    tina.left(90)
+
+tina.penup()
+tina.backward(100)
+tina.write("Hello world!")
 {% include trinket-close %}
 
 
