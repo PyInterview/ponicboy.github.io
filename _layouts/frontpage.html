@@ -10,6 +10,8 @@ format: frontpage
 </div><!-- /#header-home -->
 
 
+
+
 {% comment %}
 *
 * First check, if widget is empty or not by checking if there is a title
@@ -31,7 +33,36 @@ format: frontpage
 	{% endif %}
 </div><!-- /.row -->
 
+{% include alert warning='Hey! Can you solve this coding question?' %}
 
+{% include trinket-open type='python' %}
+"""
+Problem:
+Given a string of opening and closing parentheses, check whether it’s balanced.
+"""
+def isBalanced(expr):
+    if len(expr)%2!=0:
+        return False
+    opening=set('([{')
+    match=set([ ('(',')'), ('[',']'), ('{','}') ])
+    stack=[]
+    for char in expr:
+        if char in opening:
+            stack.append(char)
+        else:
+            if len(stack)==0:
+                return False
+            lastOpen=stack.pop()
+            if (lastOpen, char) not in match:
+                return False
+    return len(stack)==0
+
+# Test Cases:
+print isBalanced('()()(()))')
+{% include trinket-close %}
+
+
+<a class="radius button small" href="{{ site.url }}{{ site.baseurl }}/documentation/">See the solution explained ›</a>
 
 {% comment %}
 *
@@ -43,13 +74,7 @@ format: frontpage
 {% else %}
 {% capture url %}{{ site.url }}{{ site.baseurl }}{% endcapture %}
 {% endif %}
-{% if page.callforaction %}
-    <div class="row t60 b60">
-        <div class="small-12 text-center columns">
-            <a class="button large radius {{ page.callforaction.style }}" href="{{ url }}{{ page.callforaction.url }}"{% if page.callforaction.url contains 'http' %} target="_blank" {% endif %}>{{ page.callforaction.text }}</a>
-        </div><!-- /.small-12.columns -->
-    </div><!-- /.row -->
-{% endif %}
+
 
 
 
@@ -111,3 +136,12 @@ format: frontpage
 <div class="row">
     {{ content }}
 </div><!-- /.row -->
+
+
+{% if page.callforaction %}
+<div class="row t60 b60">
+    <div class="small-12 text-center columns">
+        <a class="button large radius {{ page.callforaction.style }}" href="{{ url }}{{ page.callforaction.url }}"{% if page.callforaction.url contains 'http' %} target="_blank" {% endif %}>{{ page.callforaction.text }}</a>
+    </div><!-- /.small-12.columns -->
+</div><!-- /.row -->
+{% endif %}

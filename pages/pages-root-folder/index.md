@@ -1,7 +1,5 @@
 ---
 layout: frontpage
-header:
-  image_fullwidth: header_unsplash_12.jpg
 widget1:
   title: Python Basics Review
   url: http://ponicboy.github.io/blog
@@ -19,7 +17,7 @@ widget3:
   text: Video Intro
 callforaction:
   url: https://tinyletter.com/
-  text: Inform me about new updates and features ›
+  text: Subscribe for updates ›
   style: alert
 permalink: "/index.html"
 homepage: true
