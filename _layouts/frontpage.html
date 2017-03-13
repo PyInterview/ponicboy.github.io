@@ -35,6 +35,7 @@ format: frontpage
 
 {% include alert warning='Hey! Can you solve this coding question?' %}
 
+<div class="row t60">
 {% include trinket-open type='python' %}
 import turtle
 
@@ -48,10 +49,10 @@ for c in ['red', 'green', 'yellow', 'blue']:
 tina.penup()
 tina.backward(100)
 tina.write("Hello world!")
-{% include trinket-close %}
+{% include trinket-close %}<a class="radius button small" href="{{ site.url }}{{ site.baseurl }}/documentation/">See the solution explained ›</a>
+</div>
 
 
-<a class="radius button small" href="{{ site.url }}{{ site.baseurl }}/documentation/">See the solution explained ›</a>
 
 {% comment %}
 *
