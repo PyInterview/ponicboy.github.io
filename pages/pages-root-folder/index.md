@@ -15,7 +15,7 @@ widget2:
 widget3:
   title: Videos
   url: http://youtube.com
-  image: yt2.png
+  image: yt_icon.png
   text: Video Intro
 callforaction:
   url: https://tinyletter.com/
