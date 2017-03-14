@@ -8,7 +8,7 @@
 #                                                 /____/
 #
 # Title of your website
-title: 'Feeling Responsive, very much so'
+title: 'Py Interview'
 
 # The slogan describes your website and is used on homepage in <title> and other important places
 slogan: 'A Flexible Theme for Jekyll'
@@ -21,7 +21,7 @@ credits: '<p>2017 Created by Andrew. Theme based on <a href="http://phlow.github
 
 # Main author of the website
 # See > authors.yml
-author: ponicboyin
+author: ponicboy
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
@@ -141,9 +141,9 @@ defaults:
 #   ___/ / /___/ /_/ /
 #  /____/_____/\____/    Verify Website to Webmaster Tools
 
-google_author:             'https://plus.google.com/u/0/118311555303973066167'
-google_site_verification:  'Vk0IOJ2jwG_qEoG7fuEXYqv0m2rLa8P778Fi_GrsgEQ'
-bing_webmastertools_id:    '0FB4C028ABCF07C908C54386ABD2D97F'
+google_author:             ''
+google_site_verification:  ''
+bing_webmastertools_id:    ''
 # yandex_site_verification:  ''
 # alexa_verify_id:           ''
 
