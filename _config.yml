@@ -8,7 +8,7 @@
 #                                                 /____/
 #
 # Title of your website
-title: 'Feeling Responsive, very much so'
+title: 'PyInterview'
 
 # The slogan describes your website and is used on homepage in <title> and other important places
 slogan: 'A Flexible Theme for Jekyll'
@@ -21,7 +21,7 @@ credits: '<p>2017 Created by Andrew. Theme based on <a href="http://phlow.github
 
 # Main author of the website
 # See > authors.yml
-author: ponicboyin
+author: ponicboy
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
