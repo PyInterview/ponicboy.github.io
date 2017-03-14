@@ -58,14 +58,8 @@ def isBalanced(expr):
                 return False
     return len(stack)==0
 
-for c in ['red', 'green', 'yellow', 'blue']:
-    tina.color(c)
-    tina.forward(75)
-    tina.left(90)
-
-tina.penup()
-tina.backward(100)
-tina.write("Hello world!")
+# Test Cases:
+print isBalanced('()()(()))')
 {% include trinket-close %}
 <a class="radius button small" href="{{ site.url }}{{ site.baseurl }}/documentation/">See the solution explained ›</a>
 </div>
