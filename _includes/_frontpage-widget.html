@@ -19,7 +19,7 @@
 	<p>{{ include.widget.text }}</p>
 	<p><a class="button tiny radius" href="{% if include.widget.url contains 'http' %}{{ include.widget.url }}{% else %}{{ site.url }}{{ site.baseurl }}{{ include.widget.url }}{% endif %}">{{ site.data.language.more }}</a></p>
 </div>
--->
+
 
 <div class="medium-4 columns frontpage-widget">
 <div class="card">
@@ -31,8 +31,24 @@
 		<p><a href="{{ include.widget.url }}">{{ include.widget.url_text }}</a></p>
 	</div>
 	<div class="card-reveal">
-		<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-		<p>{{ include.widget.title }}</p>
+		<span class="card-title grey-text text-darken-4">{{ include.widget.url_text }}<i class="material-icons right">close</i></span>
+		<p>{{ include.widget.text }}</p>
 	</div>
 </div>
 </div>
+-->
+<div class="medium-4 columns frontpage-widget">
+
+		<div class="card">
+			<div class="card-image">
+				<img src="{{ site.urlimg }}{{ include.widget.image }}">
+				<a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i class="material-icons">{{ include.widget.icon }}</i></a>
+			</div>
+			<div class="card-content">
+				<span class="card-title subheadline">{{ include.widget.title }}</span>
+				<p>{{ include.widget.text }}</p>
+			</div>
+		</div>
+
+</div>
+
