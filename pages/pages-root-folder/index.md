@@ -1,18 +1,21 @@
 ---
 layout: frontpage
 widget1:
-  title: Python Basics Review
+  title: Algorithms and Data Structures using Python
   url: http://ponicboy.github.io/blog
+  url_text: Review
   image: sebastian-spindler.jpg
-  text: Lets review <em>Data structures and Algorithms</em>
+  text: Review
 widget2:
-  title: Python Interview Questions
+  title: Coding Questions in Python
   url: http://ponicboy.github.io/feeling-responsive/info/
+  url_text: Practice
   image: luis-llerena-14779.jpg
   text: 'Ready? Lets jump in to some questions. '
 widget3:
   title: Videos
   url: http://youtube.com
+  url_text: Watch
   image: yt_icon.png
   text: Video Intro
 callforaction:

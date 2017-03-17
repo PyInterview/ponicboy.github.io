@@ -2,7 +2,7 @@
 - title: Home
   url: "/"
   side: left
-- title: Basics Review
+- title: Review
   url: "/blog/"
   side: left
   dropdown:
@@ -22,7 +22,7 @@
     url: "/design/page/"
   - title: Graphs
     url: "/design/page/"
-- title: Interview Questions
+- title: Coding Questions
   url: "/design/"
   side: left
   dropdown:
