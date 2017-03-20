@@ -40,7 +40,7 @@
 <div class="medium-4 columns frontpage-widget">
 
 		<div class="card">
-			<div class="card-image">
+			{% if include.widget.image contains 'yt_icon.png' %}<div class="card-image-small">{% else %}<div class="card-image">{% endif %}
 				<img src="{{ site.urlimg }}{{ include.widget.image }}">
 				<a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i class="material-icons">{{ include.widget.icon }}</i></a>
 			</div>

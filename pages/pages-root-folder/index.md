@@ -19,7 +19,7 @@ widget3:
   url: http://youtube.com
   url_text: Watch
   image: yt_icon.png
-  text: Video Intro
+  text: Short videos covering Data Structures & Algorithms review and solutions to the interview questions. See youtube channel for more.
   icon: video_library
 callforaction:
   url: https://tinyletter.com/
