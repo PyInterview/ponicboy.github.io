@@ -3,35 +3,35 @@
   url: "/"
   side: left
 - title: Review
-  url: "/blog/"
+  url: "/review/"
   side: left
   dropdown:
   - title: Big O
-    url: "/design/page/"
+    url: "/review/review/Big_O"
   - title: Array Sequences
-    url: "/design/page/"
+    url: "/review/review/Array_Sequences"
   - title: Stacks Queues and Deques
-    url: "/design/page/"
+    url: "/review/stacks/"
   - title: Linked Lists
-    url: "/design/page/"
+    url: "/review/review/Linked_Lists"
   - title: Recursion
-    url: "/design/page/"
+    url: "/review/review/Recursion"
   - title: Searching and Sorting
-    url: "/design/page/"
+    url: "/review/review/Searching_and_Sorting"
   - title: Trees
-    url: "/design/page/"
+    url: "/review/review/Trees"
   - title: Graphs
-    url: "/design/page/"
+    url: "/review/review/Graphs"
 - title: Coding Questions
-  url: "/design/"
+  url: "/questions/"
   side: left
   dropdown:
   - title: Easy
-    url: "/design/no-header/"
+    url: "/questions/easy/"
   - title: Medium
-    url: "/design/no-header/"
+    url: "/questions/medium/"
   - title: Hard
-    url: "/design/no-header/"
+    url: "/questions/hard/"
 - title: Interview Prep
   url: "/headers/"
   side: left
