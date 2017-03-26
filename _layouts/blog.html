@@ -1,16 +1,57 @@
 ---
-layout: default
-format: blog-index
-# Don't index these pages dear Google.
-noindex: true
+layout: page
+header:
+    image_fullwidth: header_unsplash_leaf.jpg
 ---
-<div class="row">
-	<div class="medium-8 columns t30">
-		{% include _pagination.html %}
-	</div><!-- /.medium-7.columns -->
+<head>
 
 
-	<div class="medium-4 columns t30">
-		{% include _sidebar.html %}
-	</div><!-- /.medium-5.columns -->
-</div><!-- /.row -->
+    <!-- Javascript -->
+    <script type="text/javascript" src="{{ url }}/assets/static/js/runestonebase.js"></script>
+    <script type="text/javascript" src="{{ url }}/assets/static/js/jquery.js"></script>
+    <script type="text/javascript" src="{{ url }}/assets/static/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="{{ url }}/assets/skulpt/dist/skulpt.min.js" type="text/javascript"></script>
+    <script src="{{ url }}/assets/skulpt/dist/skulpt-stdlib.js" type="text/javascript"></script>
+    <script src="{{ url }}/assets/static/js/editor.js" type="text/javascript"></script>
+    <script src="{{ url }}/assets/static/js/activecode.js" type="text/javascript"></script>
+    <script src="{{ url }}/assets/codemirror/lib/codemirror.js" type="text/javascript"></script>
+    <script src="{{ url }}/assets/codemirror/lib/python.js" type="text/javascript"></script>
+
+
+
+    <!--Styling -->
+    <link rel="stylesheet" href="{{ url }}/assets/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="{{ url }}/assets/static/css/jquery-ui-1.10.3.custom.min.css">
+    <link rel="stylesheet" href="{{ url }}/assets/codemirror/theme/chrome-devtools.css">
+    <link rel="stylesheet" href="{{ url }}/assets/codemirror/theme/chrome-devtools.css">
+    <link rel="stylesheet" href="{{ url }}/assets/codemirror/addon/dialog.css">
+    <link rel="stylesheet" href="{{ url }}/assets/codemirror/addon/matchesonscrollbar.css">
+    <link rel="stylesheet" href="{{ url }}/assets/codemirror/addon/show-hint.css">
+    <link rel="stylesheet" href="{{ url }}/assets/static/css/activecode.css">
+
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <!-- Config For Rune-->
+    <script type="text/javascript">
+        eBookConfig = {};
+        eBookConfig.useRunestoneServices = true;
+
+    </script>
+
+    <title>Python Helper</title>
+</head>
+<body>
+
+<div>
+    <!-- Text Editor -->
+    <textarea id="code" data-component="activecode" id=ac_example1 data-lang="python"    data-timelimit=25000  data-codelens="false" data-audio=''     data-caption='factorial'>
+print "hello!"
+    </textarea>
+</div>
+<!-- Errors -->
+<div id="errors"></div>
+<div>
+
+
+
+</body>
+</html> 
