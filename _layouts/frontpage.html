@@ -12,8 +12,6 @@ format: frontpage
 </div><!-- /#header-home -->
 
 
-
-
 {% comment %}
 *
 * First check, if widget is empty or not by checking if there is a title
@@ -36,10 +34,12 @@ format: frontpage
 </div><!-- /.row -->
 
 
-<div class="row t60">
-{% include alert warning='Hey! Can you solve this coding question?' %}
-
-{% include trinket-open type='python' %}
+<div class="row t60" >
+    {% include alert warning='Hey! Can you solve this coding question?' %}
+    <div class="small-12 columns" style="font-size: 14px">
+    <div>
+        <!-- Text Editor -->
+        <textarea id="code" data-component="activecode" data-lang="python" data-caption='factorial'>
 # Problem:
 # Given a string of opening and closing parentheses, check whether it’s balanced.
 
@@ -62,8 +62,16 @@ def isBalanced(expr):
 
 # Test Cases:
 print isBalanced('()()(()))')
-{% include trinket-close %}
-<a class="radius button small" href="{{ site.url }}{{ site.baseurl }}/documentation/">See the solution explained ›</a>
+    </textarea>
+    </div>
+
+
+    <!-- Errors -->
+    <div id="errors"></div>
+
+
+    <a class="radius button small" href="{{ site.url }}{{ site.baseurl }}/documentation/">See the solution explained ›</a>
+</div>
 </div>
 
 
