@@ -27,4 +27,5 @@ callforaction:
   style: alert
 permalink: "/index.html"
 homepage: true
+runestone: true
 ---

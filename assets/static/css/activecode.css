@@ -37,7 +37,7 @@
 
 
 .ac_actions{
-	text-align: center;
+	text-align: left;
 }
 
 .ac_sep {
@@ -64,7 +64,7 @@
 }
 .ac_output{
 	display:none;
-	max-width: 450px;
+	max-width: 650px;
 }
 
 .ac_caption {

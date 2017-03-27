@@ -97,7 +97,7 @@ ActiveCode.prototype.createEditor = function (index) {
     this.containerDiv.appendChild(codeDiv);
     var editor = CodeMirror(codeDiv, {value: this.code, lineNumbers: true,
         mode: this.containerDiv.lang, indentUnit: 4,
-        theme: "chrome-devtools",
+        //theme: "chrome-devtools",
         matchBrackets: true, autoMatchParens: true,
         extraKeys: {"Tab": "indentMore", "Shift-Tab": "indentLess"}
     });
@@ -140,11 +140,11 @@ ActiveCode.prototype.createControls = function () {
 
     if (! this.hidecode) {
         var butt = document.createElement("button");
-        $(butt).text("Load History");
-        $(butt).addClass("btn btn-default");
-        ctrlDiv.appendChild(butt);
-        this.histButton = butt;
-        $(butt).click(this.addHistoryScrubber.bind(this));
+        //$(butt).text("Load History");
+        //$(butt).addClass("btn btn-default");
+        //ctrlDiv.appendChild(butt);
+        //this.histButton = butt;
+        //$(butt).click(this.addHistoryScrubber.bind(this));
         if (this.graderactive) {
             this.addHistoryScrubber(true);
         }
@@ -210,7 +210,7 @@ ActiveCode.prototype.createControls = function () {
     }
 
 
-    $(this.outerDiv).prepend(ctrlDiv);
+    $(this.codeDiv).append(ctrlDiv);
     this.controlDiv = ctrlDiv;
 
 };
@@ -757,11 +757,14 @@ ActiveCode.prototype.runProg = function() {
         (Sk.TurtleGraphics || (Sk.TurtleGraphics = {})).target = this.graphics;
         Sk.canvas = this.graphics.id; //todo: get rid of this here and in image
         $(this.runButton).attr('disabled', 'disabled');
-        $(this.codeDiv).switchClass("col-md-12","col-md-7",{duration:500,queue:false});
+        //$(this.codeDiv).switchClass("col-md-12","col-md-7",{duration:500,queue:false});
         $(this.outDiv).show({duration:700,queue:false});
 
+
+
         if (this.historyScrubber === null && !this.autorun) {
-            dfd = this.addHistoryScrubber();
+            dfd = jQuery.Deferred();
+            dfd.resolve();
         } else {
             dfd = jQuery.Deferred();
             dfd.resolve();
