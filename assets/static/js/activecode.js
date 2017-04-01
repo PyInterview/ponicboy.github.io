@@ -71,7 +71,7 @@ ActiveCode.prototype.init = function(opts) {
     } else {
         this.caption = ""
     }
-    this.addCaption();
+    //this.addCaption();
 
     if (this.autorun) {
         $(document).ready(this.runProg.bind(this));
@@ -866,7 +866,7 @@ JSActiveCode.prototype.runProg = function() {
 
     $(this.eContainer).remove();
     $(this.output).text('');
-    $(this.codeDiv).switchClass("col-md-12","col-md-6",{duration:500,queue:false});
+    //$(this.codeDiv).switchClass("col-md-12","col-md-6",{duration:500,queue:false});
     $(this.outDiv).show({duration:700,queue:false});
 
     try {
