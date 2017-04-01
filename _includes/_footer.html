@@ -59,10 +59,11 @@
 
       <div id="subfooter">
         <nav class="row">
-          <section id="subfooter-left" class="small-12 columns credits">
-            {{ site.credits }}
+          <section id="subfooter-left" class="small-12 columns credits" style="font-size: 11px">
+            <p class="shadow-no">{{ site.credits }}</p>
           </section>
 
+          <!--
           <section id="subfooter-right" class="small-12 medium-6 columns">
             <ul class="inline-list social-icons">
             {% for social_item in site.data.socialmedia %}
@@ -70,6 +71,7 @@
             {% endfor %}
             </ul>
           </section>
+          -->
         </nav>
       </div><!-- /#subfooter -->
     </footer>
