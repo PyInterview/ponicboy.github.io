@@ -56,7 +56,6 @@
 .ac_section>* {
 	max-width: 500pt;
 	position:relative;
-	margin-top: 15px;
 }
 .ac_section .clearfix{
 	position: initial;
@@ -64,6 +63,7 @@
 .ac_output{
 	display:none;
 	max-width: 650px;
+	margin-top: 15px;
 }
 
 .ac_caption {
