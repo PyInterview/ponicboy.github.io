@@ -55,9 +55,8 @@
 }
 .ac_section>* {
 	max-width: 500pt;
-	margin-left: auto;
-	margin-right: auto;
 	position:relative;
+	margin-top: 15px;
 }
 .ac_section .clearfix{
 	position: initial;
