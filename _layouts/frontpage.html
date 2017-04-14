@@ -38,9 +38,7 @@ format: frontpage
 
     <div class="small-12 columns" style="font-size: 14px">
     {% include alert warning='Hey! Can you solve this coding question?' %}
-    <div>
-        <!-- Text Editor -->
-        <textarea id="code" data-component="activecode" data-lang="python" data-caption='factorial'>
+    {% include _activecode.html id="test1" lang="python" code="
 # Problem:
 # Given a string of opening and closing parentheses, check whether it’s balanced.
 
@@ -63,9 +61,7 @@ def isBalanced(expr):
 
 # Test Cases:
 print isBalanced('()()(()))')
-    </textarea>
-    </div>
-
+" %}
 
     <!-- Errors -->
     <div id="errors"></div>
