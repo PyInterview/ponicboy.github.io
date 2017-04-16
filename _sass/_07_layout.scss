@@ -76,10 +76,10 @@ body.video cite { color: #fff; }
 }
 #masthead-with-text {
     text-align: center;
-    font-size: rem-calc(54);
+    font-size: rem-calc(64);
     font-family: $header-font-family;
     color: #fff;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     text-shadow: 0 2px 3px rgba(0,0,0,.4);
 }
 #masthead-no-image-header {
@@ -106,9 +106,9 @@ body.video cite { color: #fff; }
         padding: 15px 0;
     }
     #masthead-with-text {
-        height: 220px;
-        padding: 30px 0;
-        font-size: rem-calc(36);
+        height: 180px;
+        padding: 20px 0;
+        font-size: rem-calc(30);
     }
     #masthead-no-image-header {
         display: none;
@@ -361,3 +361,163 @@ body.video cite { color: #fff; }
 .pr5  { padding-right: 5px !important; }
 .pr10 { padding-right: 10px !important; }
 .pr20 { padding-right: 20px !important; }
+
+
+@mixin respond-to($media, $media-size: 800px) {
+    @if $media==handhelds {
+        @media only screen and (max-width: 375px) {
+            @content;
+        }
+    }
+    @else if $media==small-screens {
+        @media only screen and (max-width: 640px) {
+            @content;
+        }
+    }
+    @else if $media==medium-screens {
+        @media only screen and (min-width: 641px) and (max-width: 800px) {
+            @content;
+        }
+    }
+    @else if $media==wide-screens {
+        @media only screen and (min-width: 800px) {
+            @content;
+        }
+    }
+    @else if $media==custom {
+        @media only screen and (max-width: $media-size) {
+            @content;
+        }
+    }
+}
+
+
+.page-wrapper {
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-page-wrapper {
+    color: #fff;
+    font-size: 30px;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    @include respond-to(custom, 540px) {
+        font-size: 24px;
+    }
+}
+
+
+
+.list-of-snacks {
+    margin-left: 0.125em;
+    &:after {
+        content: '';
+        width: 210px;
+        position: absolute;
+        bottom: 0;
+        margin-left: -0.125em;
+        @include respond-to(custom, 540px) {
+            width: 180px;
+        }
+    }
+    .snack {
+        $time: 12s;
+        $items: 4;
+        padding-left: 5px;
+        position: absolute;
+        opacity: 0;
+        white-space: nowrap;
+        animation: $time word-rotation infinite;
+        @for $i from 1 through $items {
+            &:nth-child(#{$i}) {
+                animation-delay: ($time / $items) * ($i - 1)
+            }
+        }
+    }
+}
+
+@keyframes background-animation {
+    0% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
+
+@keyframes word-rotation {
+    0% {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    5% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    15% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    20% {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+}
+
+@keyframes animate-out {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes animate-in {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+#backstretch-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    //background-color: rgba(0,0,0,0.9);
+    //opacity: 0.5;
+
+
+
+    background: rgba(86,122,159,0.4);
+    background: -moz-linear-gradient(left, rgba(86,122,159,0.4) 0%, rgba(212,237,228,0.75) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(86,122,159,0.4)), color-stop(100%, rgba(212,237,228,0.75)));
+    background: -webkit-linear-gradient(left, rgba(86,122,159,0.4) 0%, rgba(212,237,228,0.75) 100%);
+    background: -o-linear-gradient(left, rgba(86,122,159,0.4) 0%, rgba(212,237,228,0.75) 100%);
+    background: -ms-linear-gradient(left, rgba(86,122,159,0.4) 0%, rgba(212,237,228,0.75) 100%);
+    background: linear-gradient(to right, rgba(50, 90, 132, 0.4) 0%, rgba(212, 237, 228, 0.75) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#567a9f', endColorstr='#d4ede4', GradientType=1 );
+
+    /*
+    background: rgba(43,61,79,1);
+    background: -moz-linear-gradient(left, rgba(43,61,79,1) 1%, rgba(66,160,127,0.75) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(43,61,79,1)), color-stop(100%, rgba(66,160,127,0.75)));
+    background: -webkit-linear-gradient(left, rgba(43,61,79,1) 0%, rgba(66,160,127,0.75) 100%);
+    background: -o-linear-gradient(left, rgba(43,61,79,1) 0%, rgba(66,160,127,0.75) 100%);
+    background: -ms-linear-gradient(left, rgba(43,61,79,1) 0%, rgba(66,160,127,0.75) 100%);
+    background: linear-gradient(to right, rgba(43,61,79,1) 0%, rgba(66,160,127,0.75) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b3d4f', endColorstr='#42a07f', GradientType=1 );
+    */
+}

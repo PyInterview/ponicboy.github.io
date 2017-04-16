@@ -20,13 +20,37 @@
 
 {% elsif page.header.title %}
 
-<div id="masthead-with-text" style="{% if page.header.background-color %}background: {{ page.header.background-color }};{% endif %} {% if page.header.image_fullwidth %}{% elsif page.header.pattern %}background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('{{ site.urlimg }}/{{ page.header.pattern }}'){% endif %}">
+<!--<div id="masthead-with-text" style="{% if page.header.background-color %}background: {{ page.header.background-color }};{% endif %} {% if page.header.image_fullwidth %}{% elsif page.header.pattern %}background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('{{ site.urlimg }}/{{ page.header.pattern }}'){% endif %}">
 	<div class="row">
-		<div class="small-12 columns">
+		<p class="small-12 columns">
 			<div class="masthead-title">{{ page.header.title }}</div>
-		</div><!-- /.small-12.columns -->
-	</div><!-- /.row -->
-</div><!-- /#masthead -->
+			<p>Ace your next Python coding interview!</p>
+		</div>
+	</div>
+</div>
+-->
+
+<div id="masthead-with-text">
+	<div id="backstretch-overlay"></div>
+	<div class="masthead-title">{{ page.header.title }}</div>
+	<button class="btn clear-btn">Ace Your next Python Interview</button>
+
+</div>
+
+<!--
+<div class="page-wrapper">
+
+<div class="inner-page-wrapper">
+<span class="list-of-snacks">
+<span class="snack">Learn.</span>
+<span class="snack">Review.</span>
+<span class="snack">Practice.</span>
+<span class="snack">Be Ready.</span>
+</span>
+</div>
+
+</div>
+-->
 
 {% if page.breadcrumb == true %}
 {% include _breadcrumb.html %}

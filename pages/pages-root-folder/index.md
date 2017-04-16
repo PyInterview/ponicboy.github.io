@@ -1,5 +1,8 @@
 ---
 layout: frontpage
+header:
+  image_fullwidth: top-logo-whiteboard.jpg
+  title: PyInterview
 widget1:
   title: Algorithms &amp; Data Structures <p class="subheadline">using Python</p>
   url: http://ponicboy.github.io/blog
