@@ -12,7 +12,12 @@ $('audio,video').mediaelementplayer();
 <script>
     $("#masthead").backstretch("{{ site.urlimg }}{{ page.header.image_fullwidth }}", {fade: 700});
     $("#masthead-with-text").backstretch("{{ site.urlimg }}{{ page.header.image_fullwidth }}", {fade: 1000});
+</script>
+{% endif %}
 
+{% if page.header.image_halfwidth %}
+<script>
+    $("#masthead-half-text").backstretch("{{ site.urlimg }}{{ page.header.image_halfwidth }}", {fade: 1000});
 </script>
 {% endif %}
 
