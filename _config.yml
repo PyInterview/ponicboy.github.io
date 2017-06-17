@@ -14,14 +14,14 @@ title: 'PyInterview'
 slogan: 'A Flexible Theme for Jekyll'
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
-description: '»Feeling Responsive« is a responsive theme for Jekyll based on the fabulous foundation framework with beautiful typography and a bright color palette.'
+description: 'PyInterview is a free resource to help you prepare for your next Python interview, from reviewing basics in algorithms and data structures to practicing coding questions.'
 
 # The credits show up in the includes/_footer.html – It would be nice of you to leave a link to Phlow or Feeling Responsive as a thank you :)
 credits: '&copy; 2017 iBitchin Learning Inc. All Rights Reserved. <br> Built with <a href="https://pages.github.com">GitHub</a>, <a href="https://jekyllrb.com">Jekyll</a>, <a href="http://www.skulpt.org/">Skulpt</a>, <a href="https://codemirror.net">CodeMirror</a>, <a href="https://github.com/RunestoneInteractive/RunestoneComponents">Runestone</a> and <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive</a>.'
 
 # Main author of the website
 # See > authors.yml
-author: ponicboy
+author: AndrewT
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
@@ -30,7 +30,7 @@ baseurl: ''
 
 # This is for the editing function in _/includes/improve_content
 # Leave it empty if your site is not on GitHub/GitHub Pages
-improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
+improve_content:
 
 # This URL points directly to the images directory making
 # things easier to link to images in posts and templates. It needs a slash at the end.
@@ -191,8 +191,8 @@ og_type:                            'website'
 #
 
 socialmedia:
-    twitter: phlow
-    facebook: phlow.media
+    twitter:
+    facebook:
 
 
 #        ____  _

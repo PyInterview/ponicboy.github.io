@@ -33,10 +33,10 @@
   - title: Hard
     url: "/questions/hard/"
 - title: Interview Prep
-  url: "/headers/"
+  url: ""
   side: left
 - title: More
-  url: "/documentation/"
+  url: "/info/"
   side: left
 - title: Search
   url: "/search/"
