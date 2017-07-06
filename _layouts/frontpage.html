@@ -17,7 +17,7 @@ format: frontpage
 * First check, if widget is empty or not by checking if there is a title
 *
 {% endcomment %}
-<div class="row t60">
+<div class="row t50">
 	{% if page.widget1.title %}
 		{% include _frontpage-widget.html widget=page.widget1 %}
 	{% endif %}
@@ -33,8 +33,8 @@ format: frontpage
 	{% endif %}
 </div><!-- /.row -->
 
-
-<div class="row t60" >
+<br>
+<div class="row t40" >
 
     <div class="small-12 columns" style="font-size: 14px">
     {% include alert warning='Hey! Can you solve this coding question?' %}
@@ -67,7 +67,7 @@ print isBalanced('()()(()))')
     <div id="errors"></div>
 
 <br>
-    <a class="radius button small" href="{{ site.url }}{{ site.baseurl }}/documentation/">See the solution explained ›</a>
+    <a class="radius button small" href="{{ site.url }}{{ site.baseurl }}/">See the solution explained ›</a>
 </div>
 </div>
 
