@@ -34,11 +34,37 @@ format: frontpage
 </div><!-- /.row -->
 
 <br>
+
+
+
+
+<div class="row t40" >
 <div class="row t40" >
 
     <div class="small-12 columns" style="font-size: 14px">
-    {% include alert warning='Hey! Can you solve this coding question?' %}
-    {% include _activecode.html id="test1" lang="python" code="
+
+
+        <ul id="mainTabs" class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#problem">Problem</a></li>
+            <li><a data-toggle="tab" href="#solution">Solution</a></li>
+            <li><a data-toggle="tab" href="#explanation">Explanation</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="problem" class="tab-pane fade in active">
+    {% include _activecode.html id="prob" lang="python" code="
+# Problem:
+# Given a string of opening and closing parentheses, check whether it’s balanced.
+
+def isBalanced(expr):
+    pass
+
+# Test Cases:
+print isBalanced('()()(()))')
+" %}
+            </div>
+            <div id="solution" class="tab-pane fade">
+    {% include _activecode.html id="sol" lang="python" code="
 # Problem:
 # Given a string of opening and closing parentheses, check whether it’s balanced.
 
@@ -62,6 +88,17 @@ def isBalanced(expr):
 # Test Cases:
 print isBalanced('()()(()))')
 " %}
+            </div>
+            <div id="explanation" class="tab-pane fade">
+                <p>
+                To solve this...
+                </p>
+            </div>
+        </div>
+
+
+
+
 
     <!-- Errors -->
     <div id="errors"></div>

@@ -49,6 +49,13 @@
 	</noscript>
 
 
+	<!-- Bootstrap core JavaScript
+	<!-- Latest compiled and minified CSS -->
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 	<!-- Search Engine Optimization -->
 	<meta name="description" content="{{ description }}">
 	{% if site.google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification}}">{% endif %}
@@ -100,8 +107,10 @@
 	<script src="{{ url }}/assets/skulpt/dist/skulpt-stdlib.js" type="text/javascript"></script>
 	<script src="{{ url }}/assets/static/js/editor.js" type="text/javascript"></script>
 	<script src="{{ url }}/assets/static/js/activecode.js" type="text/javascript"></script>
+	<script src="{{ url }}/assets/static/js/timed_activecode.js" type="text/javascript"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.10.0/codemirror.min.js" type="text/javascript"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.10.0/mode/python/python.min.js" type="text/javascript"></script>
+	<script src="{{ url }}/assets/codemirror/addon/autorefresh.js" type="text/javascript"></script>
 
 	<!--Styling -->
 	<link rel="stylesheet" href="{{ url }}/assets/codemirror/lib/codemirror.css">
@@ -111,6 +120,7 @@
 	<link rel="stylesheet" href="{{ url }}/assets/codemirror/addon/matchesonscrollbar.css">
 	<link rel="stylesheet" href="{{ url }}/assets/codemirror/addon/show-hint.css">
 	<link rel="stylesheet" href="{{ url }}/assets/static/css/activecode.css">
+
 
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<!-- Config For Rune-->
