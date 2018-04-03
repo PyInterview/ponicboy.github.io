@@ -3,7 +3,7 @@
   url: "/"
   side: left
 - title: Review
-  url: "/review/"
+  url: "/"
   side: left
   dropdown:
   - title: Big O
@@ -23,7 +23,7 @@
   - title: Graphs
     url: "/review/review/Graphs"
 - title: Coding Questions
-  url: "/questions/"
+  url: "/"
   side: left
   dropdown:
   - title: Easy
@@ -36,7 +36,7 @@
   url: ""
   side: left
 - title: More
-  url: "/info/"
+  url: "/"
   side: left
 - title: Search
   url: "/search/"
