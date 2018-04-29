@@ -7,21 +7,21 @@
   side: left
   dropdown:
   - title: Big O
-    url: "/review/review/Big_O"
+    url: "/review/Big-O"
   - title: Array Sequences
-    url: "/review/review/Array_Sequences"
+    url: "/review/Array_Sequences"
   - title: Stacks Queues and Deques
-    url: "/review/stacks/"
+    url: "/review/Stacks/"
   - title: Linked Lists
-    url: "/review/review/Linked_Lists"
+    url: "/review/Linked_Lists"
   - title: Recursion
-    url: "/review/review/Recursion"
+    url: "/review/Recursion"
   - title: Searching and Sorting
-    url: "/review/review/Searching_and_Sorting"
+    url: "/review/Searching_and_Sorting"
   - title: Trees
-    url: "/review/review/Trees"
+    url: "/review/Trees"
   - title: Graphs
-    url: "/review/review/Graphs"
+    url: "/review/Graphs"
 - title: Coding Questions
   url: "/"
   side: left

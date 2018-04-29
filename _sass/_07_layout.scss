@@ -55,6 +55,14 @@ body.video cite { color: #fff; }
 }
 
 
+/* Images
+------------------------------------------------------------------- */
+
+.center-image {
+    margin: 0 auto;
+    display: block;
+}
+
 
 /* Search
 ------------------------------------------------------------------- */
@@ -62,7 +70,6 @@ body.video cite { color: #fff; }
 .no-js form#search {
   display: none;
 }
-
 
 
 /* Masthead

@@ -24,10 +24,6 @@ widget3:
   image: yt_icon.png
   text: Short videos on Data Structures & Algorithms and walkthrough interview questions. See youtube channel for more (coming soon).
   icon: video_library
-callforaction:
-  url: https://tinyletter.com/
-  text: Subscribe for updates ›
-  style: alert
 permalink: "/index.html"
 homepage: true
 runestone: true
